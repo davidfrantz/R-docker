@@ -18,9 +18,9 @@ add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_relea
 #
 # Install libraries
 apt-get -y install \
-  r-base \ 
+  r-base \
   libgdal-dev \
-  gdal-bin &&
+  gdal-bin && \
 #
 # Install R packages
 Rscript -e 'install.packages("tidyverse", repos="https://cloud.r-project.org")' && \
