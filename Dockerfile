@@ -3,8 +3,7 @@
 
 # Copyright (C) 2021 David Frantz
 
-#FROM klakegg/hugo:ext-ubuntu as builder
-FROM ubuntu:20.04 as builder
+FROM ubuntu:22.04 as builder
 
 # disable interactive frontends
 ENV DEBIAN_FRONTEND=noninteractive 
