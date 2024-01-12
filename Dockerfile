@@ -23,18 +23,20 @@ apt-get -y install \
   gdal-bin && \
 #
 # Install R packages
-Rscript -e 'install.packages("tidyverse", repos="https://cloud.r-project.org")' && \
-Rscript -e 'install.packages("rmarkdown", repos="https://cloud.r-project.org")' && \
-Rscript -e 'install.packages("jsonlite", repos="https://cloud.r-project.org")' && \
+Rscript -e 'install.packages("tidyverse",  repos="https://cloud.r-project.org")' && \
+Rscript -e 'install.packages("rmarkdown",  repos="https://cloud.r-project.org")' && \
+Rscript -e 'install.packages("jsonlite",   repos="https://cloud.r-project.org")' && \
 Rscript -e 'install.packages("RefManageR", repos="https://cloud.r-project.org")' && \
-Rscript -e 'install.packages("plotly",    repos="https://cloud.r-project.org")' && \
-Rscript -e 'install.packages("stringi",   repos="https://cloud.r-project.org")' && \
-Rscript -e 'install.packages("knitr",     repos="https://cloud.r-project.org")' && \
-Rscript -e 'install.packages("terra",     repos="https://cloud.r-project.org")' && \
-Rscript -e 'install.packages("raster",    repos="https://cloud.r-project.org")' && \
-Rscript -e 'install.packages("sp",        repos="https://cloud.r-project.org")' && \
-Rscript -e 'install.packages("rgdal",     repos="https://cloud.r-project.org")' && \
-Rscript -e 'install.packages("sf",     repos="https://cloud.r-project.org")' && \
+Rscript -e 'install.packages("plotly",     repos="https://cloud.r-project.org")' && \
+Rscript -e 'install.packages("stringi",    repos="https://cloud.r-project.org")' && \
+Rscript -e 'install.packages("knitr",      repos="https://cloud.r-project.org")' && \
+Rscript -e 'install.packages("terra",      repos="https://cloud.r-project.org")' && \
+Rscript -e 'install.packages("raster",     repos="https://cloud.r-project.org")' && \
+Rscript -e 'install.packages("sp",         repos="https://cloud.r-project.org")' && \
+Rscript -e 'install.packages("rgdal",      repos="https://cloud.r-project.org")' && \
+Rscript -e 'install.packages("sf",         repos="https://cloud.r-project.org")' && \
+Rscript -e 'install.packages("snow",       repos="https://cloud.r-project.org")' && \
+Rscript -e 'install.packages("snowfall",   repos="https://cloud.r-project.org")' && \
 #
 # Clear installation data
 apt-get clean && rm -r /var/cache/
