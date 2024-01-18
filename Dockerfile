@@ -19,6 +19,7 @@ add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_relea
 # Install libraries
 apt-get -y install \
   r-base \
+  pandoc \
   libgdal-dev \
   gdal-bin && \
 #
